@@ -1,14 +1,21 @@
 # Food Order Application
-This application is an order system for restaurants. 
+Welcome to the Food Order Api.
 
 This project is demo project to showcase what i can do.
 
-* There are two apps. 
-* One is a API App and the second one is React App.
+This project is a management system for restaurants. In this app the restaurant workers will be able to manage their whole restaurant communication. Less walking, less people working, more focus on customers. There will be 2 apps, one API app and one react app.
 
 
-# Version History
-This is the version history
+# Table Of Contents
+
+1. [API Server](FoodOrderApplicationAPI/readme.md)
+1. [React JS App](FoodOrderReactApp/readme.md)
+1. [Postman Collections](PostmanCollections/readme.md)
+
+You can switch to a specific version by switching branches in the repository.
+
+# Current Version - 0.1.0
+The full version history [available, here](otherfiles/VersionandChangeLog.md).
 
 # V0.1
 1. Project started

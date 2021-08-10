@@ -1,0 +1,469 @@
+{
+	"info": {
+		"_postman_id": "9c67627b-237d-49a1-9382-b9ae5e64cdd6",
+		"name": "OrderAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api​/BasicAuthZeroTest​/private-scoped",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"followAuthorizationHeader": false,
+				"disableCookies": false
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiserverhost}}/api​/BasicAuthZeroTest​/private-scoped",
+					"host": [
+						"{{apiserverhost}}"
+					],
+					"path": [
+						"api​",
+						"BasicAuthZeroTest​",
+						"private-scoped"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/BasicAuthZeroTest/private",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{apiserverhost}}/api/BasicAuthZeroTest/private",
+					"host": [
+						"{{apiserverhost}}"
+					],
+					"path": [
+						"api",
+						"BasicAuthZeroTest",
+						"private"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/BasicAuthZeroTest/public",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{apiserverhost}}/api/BasicAuthZeroTest/public",
+					"host": [
+						"{{apiserverhost}}"
+					],
+					"path": [
+						"api",
+						"BasicAuthZeroTest",
+						"public"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/AuthZeroTestController1/Hi",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiserverhost}}/api/AuthZeroTest/AuthZeroTestWithRole",
+					"host": [
+						"{{apiserverhost}}"
+					],
+					"path": [
+						"api",
+						"AuthZeroTest",
+						"AuthZeroTestWithRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Admin/AdminRoleCheck",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiserverhost}}/api/Admin/AdminRoleCheck",
+					"host": [
+						"{{apiserverhost}}"
+					],
+					"path": [
+						"api",
+						"Admin",
+						"AdminRoleCheck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/KitchenWorker/KitchenWorkerRoleCheck",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiserverhost}}/api/KitchenWorker/KitchenWorkerRoleCheck",
+					"host": [
+						"{{apiserverhost}}"
+					],
+					"path": [
+						"api",
+						"KitchenWorker",
+						"KitchenWorkerRoleCheck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Servent/ServentRoleCheck",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiserverhost}}/api/Servent/ServentRoleCheck",
+					"host": [
+						"{{apiserverhost}}"
+					],
+					"path": [
+						"api",
+						"Servent",
+						"ServentRoleCheck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Customer/CustomerRoleCheck",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiserverhost}}/api/Customer/CustomerRoleCheck",
+					"host": [
+						"{{apiserverhost}}"
+					],
+					"path": [
+						"api",
+						"Customer",
+						"CustomerRoleCheck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "​/api​/Claims​/claims",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiserverhost}}/api​/Claims​/claims",
+					"host": [
+						"{{apiserverhost}}"
+					],
+					"path": [
+						"api​",
+						"Claims​",
+						"claims"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/Auth0Test/post-private",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{BearerToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Dave\",\r\n  \"lastName\": \"Bosmans\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{apiserverhost}}/api/Auth0Test/post-private",
+					"host": [
+						"{{apiserverhost}}"
+					],
+					"path": [
+						"api",
+						"Auth0Test",
+						"post-private"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{BearerToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BearerToken",
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImV2cEMwVW1PX1JKTktaSm5nREtlUCJ9.eyJpc3MiOiJodHRwczovL29yZGVyYXBpLmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJnb29nbGUtb2F1dGgyfDEwNzA3NDg4NTU5NDU4MTc0MjQ1NyIsImF1ZCI6WyJPcmRlckFwaSIsImh0dHBzOi8vb3JkZXJhcGkuZXUuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYyNDYwODAwOSwiZXhwIjoxNjI0Njk0NDA5LCJhenAiOiJRSHVVOFB4cFpwWlF2cmZsS0NBdkNscVp1U2xJd3hEaiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJwZXJtaXNzaW9ucyI6WyJyZWFkOnRlc3RwZXJtMSIsInJlYWQ6dGVzdHBlcm0yIl19.HCd5m781XBfiDBfB1bQlbQUjqugEcBQJKXXffHfj6JgNUeDSp1FH1ktJgO7AnVKFPRncsTGQKwLG1zF8USsHdbDh5UvHAv3psc5VLghNdclP7Wtsrj1g3qtgtQrg6HRUsagHgwGIEubITUUylNiI58wNAMoaHz2G2gHc_TouklYv_lyMJTf-8F42pSemeK8QjzdschPzSaq5jzF94qgSCjE99TNHv7mpp_ISg3f86n-MtghINvnwHI_SfXcZserB3uXVzau_6X5td9FCQw7WjjmFaqCQnL4WswG3swY4MdJzeSO1FVBrfFgYxsgzRiLMUJ6yR2uFkMWE9hWueFqcpA"
+		},
+		{
+			"key": "apiserverhost",
+			"value": "https://localhost:44360"
+		}
+	]
+}
