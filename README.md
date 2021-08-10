@@ -8,8 +8,8 @@ This project is a management system for restaurants. In this app the restaurant 
 
 # Table Of Contents
 
-1. [API Server](FoodOrderApplicationAPI/readme.md)
-1. [React JS App](FoodOrderReactApp/readme.md)
+1. [API Server](FoodOrderApplicationAPI/README.md)
+1. [React JS App](FoodOrderReactApp/README.md)
 1. [Postman Collections](PostmanCollections/readme.md)
 
 You can switch to a specific version by switching branches in the repository.
